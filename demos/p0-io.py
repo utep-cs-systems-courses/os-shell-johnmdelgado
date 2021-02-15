@@ -3,8 +3,12 @@
 import os, sys, re
 
 
-fdOut = os.open("p0-output.txt", os.O_CREAT | os.O_WRONLY)
-fdIn = os.open("p0-io.py", os.O_RDONLY)
+#fdOut = os.open("p0-output.txt", os.O_CREAT | os.O_WRONLY)
+#fdIn = os.open("p0-io.py", os.O_RDONLY)
+
+fdOut = 1
+fdIn = 0
+
 
 print(f"fdIn={fdIn}, fdOut={fdOut}");
 

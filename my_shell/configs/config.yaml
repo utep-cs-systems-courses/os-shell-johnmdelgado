@@ -1,0 +1,8 @@
+defaults:
+  filepath: "./data/test_file.txt"
+  bytesToRead: 100
+  promptString: "$ "
+
+
+debugging:
+  debug: false
