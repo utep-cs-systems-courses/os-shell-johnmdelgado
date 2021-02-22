@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 """ 
 FileName: my_get_char.py
 Author: John Delgado

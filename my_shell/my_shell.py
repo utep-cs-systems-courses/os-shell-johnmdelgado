@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 """  
 FileName: my_read_line.py
 Author: John Delgado
@@ -19,14 +21,12 @@ if __name__ == '__main__':
     #inialize variables from config file
     debug = config["debugging"]["debug"]
     bytes_to_read = config["defaults"]["bytesToRead"]
-    prompt_string = config["defaults"]["promptString"] +""
 
     if debug:
         print(f"Stdin uses file descriptor {sys.stdin.fileno()}\n")
         print(f"Stdout uses file descriptor {sys.stdout.fileno()}\n")
     #get filedescriptors for stdin/stdout
     while 1:
-        write(1, prompt_string.encode())
         gl.my_get_line(bytes_to_read,debug)
 
 
