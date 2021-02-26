@@ -33,7 +33,6 @@ def check_if_exit(line_to_evaluate):
     # postcedes then the shell will exit
     exit_regex = "(?:^|\W)exit(?:$|\W)$"
     test_exit = re.match(exit_regex,line_to_evaluate)
-    print("evaluating line: {}".format(line_to_evaluate))
     if (test_exit) or (not line_to_evaluate):
         sys.exit(0)
 
